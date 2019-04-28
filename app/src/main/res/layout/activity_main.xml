@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="371dp"
+        android:layout_height="507dp"
+
+        android:layout_margin="15dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Footer aligned to bottom -->
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <Button
+                android:id="@+id/list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="@string/btn_txt"
+                android:textColor="@color/text_color_secondary"
+                />
+
+            <TextView
+                android:id="@+id/rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="@string/rate"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="18dp"
+                android:typeface="normal" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="192dp"
+                android:layout_height="47dp"
+                android:layout_below="@+id/rt"
+                android:stepSize="0.5"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        >
+
+    <RelativeLayout
+        android:id="@+id/welcome_row_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wlcm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:text="@string/wlcm_str"
+            android:textColor="@color/text_color_secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_name_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@id/welcome_row_0"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/name_enter"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="122dp"
+                android:layout_marginRight="122dp"
+                android:ems="10"
+                android:hint="@string/enter"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/textColorSecondaryInverseNoDisable"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="85dp" />
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="@string/ok"
+                android:textColor="@color/text_color_secondary" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_enter"
+                android:text="@string/sex"
+                android:paddingTop="10dp"
+                android:textColor="@color/text_color_secondary" />
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex" >
+
+                <RadioButton
+                    android:id="@+id/male_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/male"
+                    android:textColor="@color/text_color_secondary"/>
+
+                <RadioButton
+                    android:id="@+id/female_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/female"
+                    android:textColor="@color/text_color_secondary"/>
+
+                <RadioButton
+                    android:id="@+id/unknown_sex_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/unknown_sex"
+                    android:textColor="@color/text_color_secondary"
+                    android:checked="true"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/header_img_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_name_row1"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/workout_img"
+                android:src="@drawable/header_bg_w" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/activities_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_img_row2"
+            android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/msg_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/category_spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/choose"
+            android:textColor="@color/text_color_secondary" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:entries="@array/Categories" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/outer_scrollView_layout"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/activities_layout"
+         android:foregroundGravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/classes_layout"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+    </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

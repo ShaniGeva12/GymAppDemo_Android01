@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">My GymApp</string>
+    <string name="wlcm_str">Welcome to the gym!</string>
+    <string name="enter">Enter your name here</string>
+    <string name="ok">ok</string>
+    <string name="aerobic">Aerobic</string>
+    <string name="body_shape">body shape</string>
+    <string name="muscle_strains">muscle strains</string>
+    <string name="weights">weights</string>
+
+    <string-array name="Categories">
+        <item>@string/choose_class</item>
+        <item>@string/aerobic</item>
+        <item>@string/body_shape</item>
+        <item>@string/muscle_strains</item>
+        <item>@string/weights</item>
+    </string-array>
+
+    <string name="choose">Choose Category:</string>
+    <string name="a_class">Aerobic Classes</string>
+    <string name="bs_class">Body Shape Classes</string>
+    <string name="ms_class">Muscle Strains Classes</string>
+    <string name="w_class">Weights Classes</string>
+    <string name="choose_class">"- Choose - "</string>
+    <string name="hello">Hello</string>
+    <string name="sex">Sex:</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="unknown_sex">Not Specified</string>
+    <string name="wlcm_str_male">Welcome to the gym!</string>
+    <string name="wlcm_str_female">Welcome to the gym!</string>
+    <string name="hello_male">Hi dude</string>
+    <string name="hello_female">Hey girl!</string>
+    <string name="rate">Rate This App</string>
+
+    <string name="btn_txt">My Classes</string>
+
+    <string name="my_classes">My Classes</string>
+    <string name="credit">© Shani_Geva ©</string>
+    <string name="login_must">Login first!</string>
+    <string name="class_aerobic_1">Aerobic 1</string>
+    <string name="class_aerobic_2">Aerobic 2</string>
+    <string name="class_body_1">Body Shape 1</string>
+    <string name="class_body_2">Body Shape 2</string>
+    <string name="class_body_3">Body Shape 3</string>
+    <string name="class_muscle_1">Muscle 1</string>
+    <string name="class_muscle_2">Muscle 2</string>
+    <string name="class_muscle_3">Muscle 3</string>
+    <string name="class_muscle_4">Muscle 4</string>
+    <string name="class_weights_1">Weights 1</string>
+    <string name="class_weights_2">Weights 2</string>
+    <string name="class_weights_3">Weights 3</string>
+    <string name="class_weights_4">Weights 4</string>
+    <string name="class_weights_5">Weights 5</string>
+    <string name="class_weights_6">Weights 6</string>
+    <string name="class_weights_7">Weights 7</string>
+    <string name="class_weights_8">Weights 8</string>
+    <string name="rating_tnx">Thanks for rating us!</string>
+    <string name="starts">Stars</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="371dp"
+        android:layout_height="507dp"
+
+        android:layout_margin="15dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:ignore="MissingConstraints">
+
+
+        <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/title_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_classes"
+            android:textColor="@color/text_color_secondary"/>
+
+    </RelativeLayout>
+
+        <!-- Footer aligned to bottom -->
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/credits_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit"
+                android:textColor="@color/text_color_secondary"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_frame_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+
+        <ScrollView
+            android:id="@+id/act2_out_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/dyn_layout"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
