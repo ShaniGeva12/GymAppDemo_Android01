@@ -11,9 +11,10 @@
         android:id="@+id/main_layout"
         android:layout_width="371dp"
         android:layout_height="507dp"
-
         android:layout_margin="15dp"
         tools:layout_editor_absoluteX="9dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
         tools:ignore="MissingConstraints">
 
 
@@ -21,7 +22,7 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true">
 
         <TextView
